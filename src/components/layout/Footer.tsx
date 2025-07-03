@@ -30,7 +30,7 @@ const Footer = () => {
               <li><Link to="/" className="text-blue-200 hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-blue-200 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/services" className="text-blue-200 hover:text-white transition-colors">Services</Link></li>
-              <li><Link to="/book-appointment" className="text-blue-200 hover:text-white transition-colors">Book Appointment</Link></li>
+              <li><Link to="/contact" className="text-blue-200 hover:text-white transition-colors">Book Appointment</Link></li>
               <li><Link to="/contact" className="text-blue-200 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -80,7 +80,7 @@ const Footer = () => {
 
         <div className="border-t border-blue-700 mt-8 pt-8 text-center">
           <p className="text-blue-200 text-sm">
-            © 2024 Usman Hospital. All rights reserved. | Providing quality healthcare since 1995.
+            © 2025 Usman Hospital. All rights reserved. | Providing quality healthcare since 1995.
           </p>
         </div>
       </div>

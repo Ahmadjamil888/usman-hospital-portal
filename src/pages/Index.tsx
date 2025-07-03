@@ -62,7 +62,7 @@ const Index = () => {
       icon: <Microscope className="h-12 w-12 text-blue-600" />,
       title: "Laboratory Tests",
       description: "Advanced diagnostic testing and analysis",
-      href: "/services/laboratory-tests"
+      href: "/services/LaboratoryTests"
     },
     {
       icon: <Shield className="h-12 w-12 text-blue-600" />,
@@ -108,10 +108,15 @@ const Index = () => {
                     </Button>
                   </Link>
                   <Link to="/services">
-                    <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-3">
-                      Our Services
-                    </Button>
-                  </Link>
+  <Button
+    variant="outline"
+    size="lg"
+    className="bg-transparent border border-white text-white hover:bg-white hover:text-black text-lg px-8 py-3"
+  >
+    Our Services
+  </Button>
+</Link>
+
                 </div>
               </div>
             </div>
@@ -144,11 +149,15 @@ const Index = () => {
               <MapPin className="h-5 w-5" />
               <span>Satellite Town, Block C, Gujranwala</span>
             </div>
-            <Link to="/book-appointment">
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-                Book Now
-              </Button>
-            </Link>
+            <Link to="/contact">
+  <Button
+    variant="outline"
+    className="bg-transparent border border-white text-white hover:bg-white hover:text-blue-600 px-6 py-2"
+  >
+    Book Now
+  </Button>
+</Link>
+
           </div>
         </div>
       </section>
@@ -249,7 +258,7 @@ const Index = () => {
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Take the first step towards better health. Our medical team is ready to provide you with the best care possible.
           </p>
-          <Link to="/book-appointment">
+          <Link to="/contact">
             <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-3">
               Book Appointment Now
               <ChevronRight className="ml-2 h-5 w-5" />
