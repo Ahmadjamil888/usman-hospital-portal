@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       {/* Top Bar */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-2">
+      <div className="bg-gradient-to-r from-teal-700 to-teal-800 text-white py-2">
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <span>Welcome, {user.email}</span>
                 {isAdmin && (
                   <Link to="/admin">
-                    <Button variant="outline" size="sm" className="text-blue-600 border-white hover:bg-white">
+                    <Button variant="outline" size="sm" className="text-teal-700 border-white hover:bg-white hover:text-teal-800">
                       Admin
                     </Button>
                   </Link>
@@ -57,14 +57,14 @@ const Navbar = () => {
                   variant="outline" 
                   size="sm" 
                   onClick={signOut}
-                  className="text-blue-600 border-white hover:bg-white"
+                  className="text-teal-700 border-white hover:bg-white hover:text-teal-800"
                 >
                   Sign Out
                 </Button>
               </div>
             ) : (
               <Link to="/auth">
-                <Button variant="outline" size="sm" className="text-blue-600 border-white hover:bg-white">
+                <Button variant="outline" size="sm" className="text-teal-700 border-white hover:bg-white hover:text-teal-800">
                   Sign In
                 </Button>
               </Link>
@@ -77,14 +77,14 @@ const Navbar = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-r from-teal-600 to-teal-700 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-lg">U</span>
             </div>
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-teal-700 to-slate-700 bg-clip-text text-transparent">
                 Usman Hospital
               </h1>
-              <p className="text-xs text-gray-600">Excellence in Healthcare</p>
+              <p className="text-xs text-slate-600">Excellence in Healthcare</p>
             </div>
           </Link>
 
@@ -94,14 +94,14 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <Link to="/">
-                    <NavigationMenuLink className={`px-4 py-2 font-medium ${location.pathname === '/' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}>
+                    <NavigationMenuLink className={`px-4 py-2 font-medium ${location.pathname === '/' ? 'text-teal-700' : 'text-slate-700 hover:text-teal-700'}`}>
                       Home
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-gray-700 hover:text-blue-600">
+                  <NavigationMenuTrigger className="text-slate-700 hover:text-teal-700">
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -110,7 +110,7 @@ const Navbar = () => {
                         <Link
                           key={service.href}
                           to={service.href}
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-blue-50 hover:text-blue-600"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-teal-50 hover:text-teal-700"
                         >
                           <div className="text-sm font-medium leading-none">{service.name}</div>
                         </Link>
@@ -121,7 +121,7 @@ const Navbar = () => {
 
                 <NavigationMenuItem>
                   <Link to="/about">
-                    <NavigationMenuLink className={`px-4 py-2 font-medium ${location.pathname === '/about' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}>
+                    <NavigationMenuLink className={`px-4 py-2 font-medium ${location.pathname === '/about' ? 'text-teal-700' : 'text-slate-700 hover:text-teal-700'}`}>
                       About
                     </NavigationMenuLink>
                   </Link>
@@ -129,7 +129,7 @@ const Navbar = () => {
 
                 <NavigationMenuItem>
                   <Link to="/contact">
-                    <NavigationMenuLink className={`px-4 py-2 font-medium ${location.pathname === '/contact' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}>
+                    <NavigationMenuLink className={`px-4 py-2 font-medium ${location.pathname === '/contact' ? 'text-teal-700' : 'text-slate-700 hover:text-teal-700'}`}>
                       Contact
                     </NavigationMenuLink>
                   </Link>
@@ -138,7 +138,7 @@ const Navbar = () => {
             </NavigationMenu>
 
             <Link to="/book-appointment">
-              <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800">
+              <Button className="bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white">
                 Book Appointment
               </Button>
             </Link>
@@ -157,17 +157,17 @@ const Navbar = () => {
         {isOpen && (
           <div className="lg:hidden mt-4 pb-4 border-t">
             <div className="flex flex-col space-y-2 pt-4">
-              <Link to="/" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setIsOpen(false)}>
+              <Link to="/" className="py-2 text-slate-700 hover:text-teal-700" onClick={() => setIsOpen(false)}>
                 Home
               </Link>
               <div className="py-2">
-                <span className="text-gray-700 font-medium">Services</span>
+                <span className="text-slate-700 font-medium">Services</span>
                 <div className="ml-4 mt-2 space-y-2">
                   {services.map((service) => (
                     <Link
                       key={service.href}
                       to={service.href}
-                      className="block py-1 text-sm text-gray-600 hover:text-blue-600"
+                      className="block py-1 text-sm text-slate-600 hover:text-teal-700"
                       onClick={() => setIsOpen(false)}
                     >
                       {service.name}
@@ -175,14 +175,14 @@ const Navbar = () => {
                   ))}
                 </div>
               </div>
-              <Link to="/about" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setIsOpen(false)}>
+              <Link to="/about" className="py-2 text-slate-700 hover:text-teal-700" onClick={() => setIsOpen(false)}>
                 About
               </Link>
-              <Link to="/contact" className="py-2 text-gray-700 hover:text-blue-600" onClick={() => setIsOpen(false)}>
+              <Link to="/contact" className="py-2 text-slate-700 hover:text-teal-700" onClick={() => setIsOpen(false)}>
                 Contact
               </Link>
               <Link to="/book-appointment" onClick={() => setIsOpen(false)}>
-                <Button className="w-full mt-4 bg-gradient-to-r from-blue-600 to-blue-700">
+                <Button className="w-full mt-4 bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800">
                   Book Appointment
                 </Button>
               </Link>

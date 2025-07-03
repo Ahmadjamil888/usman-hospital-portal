@@ -48,30 +48,30 @@ const Auth = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-teal-600"></div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-teal-50">
       <Navbar />
       
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-md mx-auto">
           <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-gradient-to-r from-teal-600 to-teal-700 rounded-full flex items-center justify-center mx-auto mb-4">
               <Stethoscope className="h-8 w-8 text-white" />
             </div>
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-teal-700 to-slate-700 bg-clip-text text-transparent">
               Welcome to Usman Hospital
             </h1>
-            <p className="text-gray-600 mt-2">Sign in to book appointments and access your medical records</p>
+            <p className="text-slate-600 mt-2">Sign in to book appointments and access your medical records</p>
           </div>
 
-          <Card className="shadow-xl border-0">
+          <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle className="text-center text-gray-800">Access Your Account</CardTitle>
+              <CardTitle className="text-center text-slate-800">Access Your Account</CardTitle>
               <CardDescription className="text-center">
                 Sign in to your existing account or create a new one
               </CardDescription>
@@ -94,7 +94,7 @@ const Auth = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
-                        className="focus:ring-2 focus:ring-blue-500"
+                        className="focus:ring-2 focus:ring-teal-500 border-slate-200"
                       />
                     </div>
                     <div className="space-y-2">
@@ -106,12 +106,12 @@ const Auth = () => {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
-                        className="focus:ring-2 focus:ring-blue-500"
+                        className="focus:ring-2 focus:ring-teal-500 border-slate-200"
                       />
                     </div>
                     <Button 
                       type="submit" 
-                      className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800"
+                      className="w-full bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800"
                       disabled={isLoading}
                     >
                       {isLoading ? 'Signing In...' : 'Sign In'}
@@ -130,7 +130,7 @@ const Auth = () => {
                         value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
                         required
-                        className="focus:ring-2 focus:ring-blue-500"
+                        className="focus:ring-2 focus:ring-teal-500 border-slate-200"
                       />
                     </div>
                     <div className="space-y-2">
@@ -142,7 +142,7 @@ const Auth = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
-                        className="focus:ring-2 focus:ring-blue-500"
+                        className="focus:ring-2 focus:ring-teal-500 border-slate-200"
                       />
                     </div>
                     <div className="space-y-2">
@@ -154,12 +154,12 @@ const Auth = () => {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
-                        className="focus:ring-2 focus:ring-blue-500"
+                        className="focus:ring-2 focus:ring-teal-500 border-slate-200"
                       />
                     </div>
                     <Button 
                       type="submit" 
-                      className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800"
+                      className="w-full bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800"
                       disabled={isLoading}
                     >
                       {isLoading ? 'Creating Account...' : 'Create Account'}
@@ -171,7 +171,7 @@ const Auth = () => {
           </Card>
 
           <div className="mt-6 text-center">
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-slate-600">
               For admin access, please contact the hospital administration.
             </p>
           </div>
