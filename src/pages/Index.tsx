@@ -62,7 +62,7 @@ const Index = () => {
       icon: <Microscope className="h-12 w-12 text-blue-600" />,
       title: "Laboratory Tests",
       description: "Advanced diagnostic testing and analysis",
-      href: "/services/LaboratoryTests"
+      href: "/services/laboratory-tests"
     },
     {
       icon: <Shield className="h-12 w-12 text-blue-600" />,
