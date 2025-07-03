@@ -61,14 +61,11 @@ const Navbar = () => {
         </div>
       ) : (
         <Link to="/auth">
-          <Button
-            variant="outline"
-            size="sm"
-            className="text-white border-white hover:bg-white hover:text-blue-700"
-          >
-            Sign In
-          </Button>
-        </Link>
+  <button className="bg-transparent border border-white text-white hover:bg-white hover:text-blue-700 px-4 py-2 rounded-sm text-sm transition duration-300">
+    Sign In
+  </button>
+</Link>
+
       )}
     </div>
   </div>
